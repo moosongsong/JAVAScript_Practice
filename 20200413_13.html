@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>insert picture</title>
+    <script type="text/javascript">
+      var pics=Array("a (1).jpg", "a (2).jpg", "a (3).jpg", "a (4).jpg", "a (5).jpg");
+      var nowpic = -1;
+      var interSec = 1000;
+
+      function start(){
+        setInterval(function(){
+          nowpic++;
+          nowpic %= pics.length;
+          document.getElementById('prev1').src = pics[nowpic];
+        }, interSec);
+      }
+      //웹페이지가 완료되고 나면
+      //2초마나 a.jpg > >계속 돌기.
+    </script>
+  </head>
+  <body onload="start()">
+    <table>
+      <tr>
+        <td colspan="5"><img id="prev1" src="a (3).jpg" alt="nopic" style="width:450px"></td>
+      </tr>
+      <tr>
+        <td><img id="pic" src="a (1).jpg" alt="nopic" style="width:90px" onmouseover="change(this)"></td>
+        <td><img id="pic" src="a (2).jpg" alt="nopic" style="width:90px" onmouseover="change(this)"></td>
+        <td><img id="pic" src="a (3).jpg" alt="nopic" style="width:90px" onmouseover="change(this)"></td>
+        <td><img id="pic" src="a (4).jpg" alt="nopic" style="width:90px" onmouseover="change(this)"></td>
+        <td><img id="pic" src="a (5).jpg" alt="nopic" style="width:90px" onmouseover="change(this)"></td>
+      </tr>
+    </table>
+  </body>
+</html>

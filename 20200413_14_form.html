@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      String.prototype.checkEmail = function(){
+        var pattern = /^[a-z][a-z0-9_]*@[a-z][a-z0-9_]*\.(com|net|gov|((co|ac|go)\.(kr|jp|en)))$/;
+        return pattern.test(this);
+      }
+      String.prototype.checkPhoce = function(){
+        var pattern =  /^0[0-9]{1,2}-[0-9]{3,4}-[0-9]{4}$/;
+        return pattern.test(this);
+      }
+      function start(){
+        document.getElementById('btnCheck').onclick = function(){
+          alert(document.getElementById('phone').value.checkEmail());
+          alert(document.getElementById('email').value.checkPhoce());
+        }
+      }
+    </script>
+  </head>
+  <body onload="start()">
+    <input type="text" id="phone" name="phone" value="">
+    <!-- <input type="text" id="email" name="email" value=""> -->
+    <button type="button" id="btnCheck" name="btnCheck">유효성 검사</button>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>this is sample code</title>
+    <script>
+      function change(obj){
+        document.getElementById('prev1').src = obj.src;
+      }
+    </script>
+    <style media="screen">
+
+    </style>
+  </head>
+  <body>
+   <table>
+     <tr>
+       <td colspan="5"><img id="prev1" src="a (3).jpg" alt="nopic" style="width:450px"></td>
+     </tr>
+     <tr>
+       <td><img id="pic" src="a (1).jpg" alt="nopic" style="width:90px" onmouseover="change(this)"></td>
+       <td><img id="pic" src="a (2).jpg" alt="nopic" style="width:90px" onmouseover="change(this)"></td>
+       <td><img id="pic" src="a (3).jpg" alt="nopic" style="width:90px" onmouseover="change(this)"></td>
+       <td><img id="pic" src="a (4).jpg" alt="nopic" style="width:90px" onmouseover="change(this)"></td>
+       <td><img id="pic" src="a (5).jpg" alt="nopic" style="width:90px" onmouseover="change(this)"></td>
+     </tr>
+   </table>
+  </body>
+</html>
