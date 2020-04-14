@@ -1,0 +1,7 @@
+body { padding: 0; margin: 0; }
+ul, li { list-style: none; margin: 0; padding: 0; }
+body > ul { width: 500px; margin: 0 auto; }
+ul>li::before, ul>li::after { content: ''; display: block; clear: both; }
+ul > li > input { float: left; display: block; width: 75px; text-align: right; }
+ul > li > input:nth-child(1) { text-align: left; }
+body > div { text-align: center; margin: 10px; } 
