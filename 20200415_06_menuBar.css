@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+#navi ul, #navi ul>li{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navi ul{
+  background-color: rgb(94, 31, 89);
+  height: 22px;
+}
+
+#navi ul::before, #navi ul::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#navi ul>li {
+  float: left;
+  width: 15%;
+  height: 21px;
+  background-color: rgb(183, 144, 221);
+  font-size: 15px;
+  font-weight: bold;
+  text-align:center;
+  margin: auto;
+  padding: 1px rgb(172, 77, 162);
+}
+
+#navi ul li:last-child{
+  float: right;
+}
