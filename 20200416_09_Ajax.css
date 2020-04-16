@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(44, 17, 69);
+  color: rgb(178, 134, 208);
+  padding: 10px;
+  margin: 10px;
+}
+
+img{
+  width: 300px;
+}
+
+.thumb > img:hover{
+  cursor: pointer;
+}
