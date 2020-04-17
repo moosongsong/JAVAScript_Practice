@@ -1,0 +1,15 @@
+body {
+  background-color: rgb(44, 17, 69);
+  color: rgb(178, 134, 208);
+  padding: 0;
+  margin: 0;
+}
+
+.mainIMG > img {
+  width: 200px;
+}
+
+button:hover{
+  cursor: pointer;
+
+}

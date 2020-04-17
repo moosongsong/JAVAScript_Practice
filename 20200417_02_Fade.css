@@ -1,0 +1,29 @@
+*{
+  font-size: 9pt;
+}
+
+body {
+  background-color: rgb(44, 17, 69);
+  color: rgb(178, 134, 208);
+  padding: 0;
+  margin: 0;
+}
+
+ul, ul > li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul{
+  width: 300px;
+  height: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+ul>li{
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
