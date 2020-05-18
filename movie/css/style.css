@@ -1,0 +1,41 @@
+body { padding: 0; margin: 0; }
+div.row {
+	position: fixed;
+	left: 0; right: 0; top: 0; bottom: 0;
+}
+div.row:before, div.row:after { 
+	content: '';
+	display: block;
+	clear: both;
+}
+
+div.row > div { float: left; height: 100%; }
+div.row > div.left { width: 200px; }
+div.row > div.right { width: 400px; }
+div.row > div.left { border-right: 2px solid #000000; }
+
+div.left > ul, div.left > ul > li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+div.left > ul {
+	border: 2px solid #000000;	
+	margin: 5px 5px 0 5px;
+	border-radius: 10px;
+}
+
+div.left > ul > li {
+	padding: 5px 5px 0 5px;
+}
+
+div.left > ul > li:last-child {
+	padding-bottom: 5px;
+	text-align: right;
+}
+
+div.right {
+	padding: 5px;
+}
+
